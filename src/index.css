@@ -1,0 +1,165 @@
+/* ------------------------------------------- */
+/*  RESET E CONFIGURAÇÃO GLOBAL                */
+/* ------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0A1A2F;
+  color: white;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+/* Remove highlight feio no mobile */
+button, input, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ------------------------------------------- */
+/*  ANIMAÇÕES                                  */
+/* ------------------------------------------- */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Animação suave para páginas */
+.page-enter {
+  opacity: 0;
+}
+.page-enter-active {
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
+
+/* ------------------------------------------- */
+/*  SCROLLBAR PERSONALIZADA (opcional)         */
+/* ------------------------------------------- */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A1A2F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1B1C1F;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2b2c2f;
+}
+
+/* ------------------------------------------- */
+/*  LINKS E BOTÕES                             */
+/* ------------------------------------------- */
+
+a {
+  transition: 0.3s ease;
+}
+
+button {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* ------------------------------------------- */
+/*  IMAGENS                                    */
+/* ------------------------------------------- */
+
+img {
+  user-select: none;
+  pointer-events: auto;
+}
+
+/* ------------------------------------------- */
+/*  ESTILOS DE TEXTO                           */
+/* ------------------------------------------- */
+
+p {
+  letter-spacing: 0.3px;
+}
+
+/* ------------------------------------------- */
+/*  ESTILOS OPCIONAIS EXTRA                    */
+/* ------------------------------------------- */
+
+/* Glow suave no texto importante */
+.glow-text {
+  text-shadow: 0 0 12px rgba(255,255,255,0.25);
+}
+
+/* Efeito polaroid caso queira aplicar em fotos */
+.polaroid {
+  padding: 10px;
+  background: white;
+  color: black;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  transform: rotate(-2deg);
+}
+
+.polaroid-caption {
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes openLetter {
+  0% { transform: scale(0.7) rotateX(60deg); opacity: 0; }
+  60% { transform: scale(1.05) rotateX(0deg); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
