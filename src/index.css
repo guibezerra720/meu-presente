@@ -163,3 +163,106 @@ p {
   50% { background-position: 100% 100%; }
   100% { background-position: 0% 0%; }
 }
+
+/* ================================
+   RESPONSIVE GLOBAL STYLE — MOBILE
+   ================================ */
+
+@media (max-width: 768px) {
+
+  /* Remove qualquer overflow lateral */
+  body, html {
+    overflow-x: hidden !important;
+  }
+
+  /* Ajusta containers principais */
+  div {
+    max-width: 100% !important;
+  }
+
+  /* Títulos */
+  h1 {
+    font-size: 24px !important;
+    padding: 0 10px !important;
+  }
+
+  /* Parágrafos */
+  p {
+    font-size: 16px !important;
+    line-height: 1.55 !important;
+    padding: 16px !important;
+    margin: 18px 0 !important;
+  }
+
+  /* BOTÕES */
+  a, button {
+    font-size: 16px !important;
+    padding: 12px 22px !important;
+  }
+
+  /* Imagens centrais */
+  img {
+    max-width: 80% !important;
+    height: auto !important;
+    margin: 20px auto !important;
+  }
+
+  /* Fotos tipo post-it nos cantos */
+  img[style*="position: absolute"] {
+    width: 150px !important;
+    opacity: 0.85 !important;
+  }
+
+  /* POST-ITS Lado ESQUERDO */
+  img[style*="left"] {
+    left: 20px !important;
+  }
+
+  /* POST-ITS Lado DIREITO */
+  img[style*="right"] {
+    right: 20px !important;
+  }
+
+  /* Inclinação mais suave com menos deslocamento */
+  [style*="rotate"] {
+    transform: rotate(1.5deg) !important;
+  }
+
+  /* Corrige textos alternados esquerda/direita */
+  [style*="translateX"] {
+    transform: none !important;
+  }
+
+  /* Inputs */
+  input {
+    width: 80% !important;
+    font-size: 18px !important;
+    padding: 12px !important;
+  }
+
+  /* Área da senha */
+  .senha-container {
+    margin-top: 40px !important;
+  }
+}
+
+/* ================================
+   SUPER SMALL (telefones muito pequenos)
+   ================================ */
+@media (max-width: 420px) {
+  h1 {
+    font-size: 22px !important;
+  }
+
+  p {
+    font-size: 15px !important;
+  }
+
+  img {
+    max-width: 90% !important;
+  }
+
+  a, button {
+    font-size: 15px !important;
+  }
+}
